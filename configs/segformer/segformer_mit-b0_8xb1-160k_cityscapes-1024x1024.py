@@ -1,6 +1,6 @@
 _base_ = [
     '../_base_/models/segformer_mit-b0.py',
-    '../_base_/datasets/cityscapes_1024x1024.py',
+    '../_base_/datasets/configs/sctnet/sctnet-b_seg50_8x2_160k_cityscapes.py',
     '../_base_/default_runtime.py', '../_base_/schedules/schedule_160k.py'
 ]
 crop_size = (1024, 1024)

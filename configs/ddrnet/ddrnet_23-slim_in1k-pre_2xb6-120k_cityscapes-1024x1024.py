@@ -1,5 +1,5 @@
 _base_ = [
-    '../_base_/datasets/cityscapes_1024x1024.py',
+    '../_base_/datasets/trafficsynth_cityscapes.py',
     '../_base_/default_runtime.py',
 ]
 
@@ -11,7 +11,7 @@ class_weight = [
     1.0507
 ]
 checkpoint = 'https://download.openmmlab.com/mmsegmentation/v0.5/ddrnet/pretrain/ddrnet23s-in1kpre_3rdparty-1ccac5b1.pth'  # noqa
-crop_size = (1024, 1024)
+crop_size = (512, 1024)
 data_preprocessor = dict(
     type='SegDataPreProcessor',
     size=crop_size,
